@@ -1,6 +1,6 @@
-# Guía Completa de Configuración, Limpieza, Módulos y Auditoría — HyperOS 4 EEA (`OS4.0.1.0.XOJEUXM`, Android 17) + Kernel EVONIX 4.6.1 en POCO X7 Pro (`rodin_eea`)
-
 > 🌐 **Español** | [English](README.en.md)
+
+# Guía Completa de Configuración, Limpieza, Módulos y Auditoría — HyperOS 4 EEA (`OS4.0.1.0.XOJEUXM`, Android 17) + Kernel EVONIX 4.6.1 en POCO X7 Pro (`rodin_eea`)
 
 **Detalles del dispositivo y entorno donde ha sido testeada esta guía**
 

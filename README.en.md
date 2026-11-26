@@ -1,6 +1,6 @@
-# Complete Setup, Debloat, Modules & Audit Guide — HyperOS 4 EEA (`OS4.0.1.0.XOJEUXM`, Android 17) + EVONIX 4.6.1 Kernel on POCO X7 Pro (`rodin_eea`)
-
 > 🌐 [Español](README.md) | **English**
+
+# Complete Setup, Debloat, Modules & Audit Guide — HyperOS 4 EEA (`OS4.0.1.0.XOJEUXM`, Android 17) + EVONIX 4.6.1 Kernel on POCO X7 Pro (`rodin_eea`)
 
 **Device and test environment details where this guide was verified**
 
