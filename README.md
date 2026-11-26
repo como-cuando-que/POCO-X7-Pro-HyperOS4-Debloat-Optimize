@@ -19,7 +19,11 @@
 
 Sigue este orden exacto desde una instalación limpia de **HyperOS 4 EEA (`OS4.0.1.0.XOJEUXM`)** para reproducir el entorno sin errores ni conflictos:
 
-> **Requisitos en PC:** Windows con **PowerShell** y **`ADB` / `Fastboot`** ([Android Platform-Tools](https://developer.android.com/tools/releases/platform-tools)) disponible en el `PATH`. *(Los scripts verifican automáticamente la conexión ADB y el permiso root de `Shell` antes de aplicar cambios.)*
+> **Requisitos en PC:** Windows con **PowerShell** y **`ADB` / `Fastboot`** ([Android Platform-Tools](https://developer.android.com/tools/releases/platform-tools)) disponible en el `PATH`. Para instalarlo y agregarlo automáticamente al `PATH` desde PowerShell, ejecuta:
+> ```powershell
+> winget install Google.PlatformTools
+> ```
+> *(Cierra y vuelve a abrir PowerShell al terminar para que el nuevo `PATH` surta efecto. Los scripts verifican automáticamente la conexión ADB y el permiso root de `Shell` antes de aplicar cambios.)*
 
 1. **Instalar HyperOS 4 EEA (`OS4.0.1.0.XOJEUXM`) limpia y completar el primer arranque:**
    * Desde `OS3.0.303.0.WOJEUXM` stock vía actualizador oficial (Mi Pilot / OTA pública) o flasheando la Fastboot ROM oficial `.tgz` con Mi Flash Tool en modo **`clean all`** *(**NUNCA** `clean all and lock`)*.
