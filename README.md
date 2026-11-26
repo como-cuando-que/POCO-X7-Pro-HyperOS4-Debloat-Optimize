@@ -26,7 +26,10 @@ Sigue este orden exacto desde una instalación limpia de **HyperOS 4 EEA (`OS4.0
    * Una vez iniciado en `OS4.0.1.0.XOJEUXM`, realiza **Restablecer de fábrica** desde *Ajustes → Acerca del teléfono → Restaurar de fábrica* (con el recovery stock de Android 17) y completa el asistente inicial hasta llegar al escritorio.
 2. **Flashear el [Kernel EVONIX 4.6.1](https://github.com/NEESCHAL-3/EVONIX-Kernel/) (`HyperOS -- KSU + SUSFS`):**
    * Compatible oficialmente con **HyperOS 4 / Android 17** manteniendo la base Linux `6.6.144` Android GKI (`adios`, `bbr`, `schedutil`, KernelSU Next `v3.4.2` y SUSFS `v2.4.0`).
-   * Si usas el paquete AnyKernel3 `.zip`, entra a **Fastboot**, flashea el **[OrangeFox específico para HyperOS 4 (Telegram)](https://t.me/PocoX7ProNepalChat/93841)** en `vendor_boot` *(build para HyperOS 4 publicado por [NEESCHAL-3](https://github.com/NEESCHAL-3) en Telegram; repositorio fuente y otros releases en [GitHub — OrangeFox-rodin-source](https://github.com/NEESCHAL-3/OrangeFox-rodin-source/))* mediante `fastboot flash vendor_boot <ofox_hos4>.img && fastboot reboot recovery`, instala el `.zip` de EVONIX 4.6.1 *(sin Format Data ni wipes)* y reinicia al sistema.
+   * Si usas el paquete AnyKernel3 `.zip`, entra a **Fastboot** y flashea el **[OrangeFox específico para HyperOS 4 (Telegram)](https://t.me/PocoX7ProNepalChat/93841)** en `vendor_boot` *(build para HyperOS 4 publicado por [NEESCHAL-3](https://github.com/NEESCHAL-3) en Telegram; repositorio fuente y otros releases en [GitHub — OrangeFox-rodin-source](https://github.com/NEESCHAL-3/OrangeFox-rodin-source/))* en dos comandos separados:
+     1. `fastboot flash vendor_boot <ofox_hos4>.img`
+     2. `fastboot reboot` — **ni bien ejecutes este comando, mantén presionada la tecla Volumen Arriba (`Vol +`)** hasta que aparezca el logo de OrangeFox.
+   * Una vez en OrangeFox, instala el `.zip` de EVONIX 4.6.1 *(sin Format Data ni wipes)* y reinicia al sistema.
 3. **Instalar el gestor [KernelSU Next](https://github.com/KernelSU-Next/KernelSU-Next) (`v3.4.2`):**
    * Instala el APK (`com.rifsxd.ksunext`), ábrelo y confirma que detecta el kernel EVONIX 4.6.1 correctamente.
 4. **Activar la depuración ADB en el teléfono:**

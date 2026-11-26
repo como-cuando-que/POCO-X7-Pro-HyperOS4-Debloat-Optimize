@@ -26,7 +26,10 @@ Follow this exact order starting from a clean install of **HyperOS 4 EEA (`OS4.0
    * Once booted into `OS4.0.1.0.XOJEUXM`, perform a **Factory Reset** from *Settings → About phone → Factory reset* (using stock Android 17 recovery) and complete the initial setup wizard to reach the home screen.
 2. **Flash the [EVONIX 4.6.1 Kernel](https://github.com/NEESCHAL-3/EVONIX-Kernel/) (`HyperOS -- KSU + SUSFS`):**
    * Officially compatible with **HyperOS 4 / Android 17** keeping the Linux `6.6.144` Android GKI base (`adios`, `bbr`, `schedutil`, KernelSU Next `v3.4.2`, and SUSFS `v2.4.0`).
-   * If using the AnyKernel3 `.zip` package, boot into **Fastboot**, flash the **[HyperOS 4-specific OrangeFox (Telegram)](https://t.me/PocoX7ProNepalChat/93841)** to `vendor_boot` *(HyperOS 4 build released by [NEESCHAL-3](https://github.com/NEESCHAL-3) on Telegram; source repository and other releases at [GitHub — OrangeFox-rodin-source](https://github.com/NEESCHAL-3/OrangeFox-rodin-source/))* via `fastboot flash vendor_boot <ofox_hos4>.img && fastboot reboot recovery`, flash the EVONIX 4.6.1 `.zip` *(no Format Data or wipes)*, and reboot to system.
+   * If using the AnyKernel3 `.zip` package, boot into **Fastboot** and flash the **[HyperOS 4-specific OrangeFox (Telegram)](https://t.me/PocoX7ProNepalChat/93841)** to `vendor_boot` *(HyperOS 4 build released by [NEESCHAL-3](https://github.com/NEESCHAL-3) on Telegram; source repository and other releases at [GitHub — OrangeFox-rodin-source](https://github.com/NEESCHAL-3/OrangeFox-rodin-source/))* using two separate commands:
+     1. `fastboot flash vendor_boot <ofox_hos4>.img`
+     2. `fastboot reboot` — **as soon as you run this command, press and hold Volume Up (`Vol +`)** until the OrangeFox logo appears.
+   * Once inside OrangeFox, flash the EVONIX 4.6.1 `.zip` *(no Format Data or wipes)* and reboot to system.
 3. **Install the [KernelSU Next](https://github.com/KernelSU-Next/KernelSU-Next) manager (`v3.4.2`):**
    * Install the APK (`com.rifsxd.ksunext`), open it, and confirm it detects the EVONIX 4.6.1 kernel properly.
 4. **Enable ADB debugging on the phone:**
