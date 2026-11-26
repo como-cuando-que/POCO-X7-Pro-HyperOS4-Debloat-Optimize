@@ -1,5 +1,7 @@
 # Guía Completa de Configuración, Limpieza, Módulos y Auditoría — HyperOS 4 EEA (`OS4.0.1.0.XOJEUXM`, Android 17) + Kernel EVONIX 4.6.1 en POCO X7 Pro (`rodin_eea`)
 
+> 🌐 **Español** | [English](README.en.md)
+
 **Detalles del dispositivo y entorno donde ha sido testeada esta guía**
 
 | Campo | Entorno de pruebas verificado |
@@ -45,7 +47,8 @@ Sigue este orden exacto desde una instalación limpia de **HyperOS 4 EEA (`OS4.0
 
 ```text
 HyperOS4-EEA-EVONIX-POCO-X7-Pro/
-├── README.md                                             # Esta guía completa (paso a paso, paquetes, enlaces de módulos y auditoría)
+├── README.md                                             # Esta guía completa en español (paso a paso, paquetes, enlaces y auditoría)
+├── README.en.md                                          # Complete guide in English
 ├── Iniciar_Menu.bat                                      # Doble clic en Windows: abre el menú interactivo (sin errores de ExecutionPolicy)
 └── scripts/
     ├── 00_menu_hos4_eea_evonix.ps1                       # Menú interactivo visual en consola (opciones 1–9, D, R y ENTER para volver)
