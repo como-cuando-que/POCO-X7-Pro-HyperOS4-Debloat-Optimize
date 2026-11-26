@@ -1,0 +1,14 @@
+# Binarios locales descargados (enlaces oficiales en README.md)
+archivos/
+*.apk
+*.zip
+*.img
+*.tgz
+*.tar
+*.log
+
+# Archivos temporales de sistema / editores
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
