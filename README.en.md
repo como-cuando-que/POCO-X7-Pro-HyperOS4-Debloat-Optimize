@@ -26,7 +26,7 @@ Follow this exact order starting from a clean install of **HyperOS 4 EEA (`OS4.0
    * Once booted into `OS4.0.1.0.XOJEUXM`, perform a **Factory Reset** from *Settings → About phone → Factory reset* (using stock Android 17 recovery) and complete the initial setup wizard to reach the home screen.
 2. **Flash the [EVONIX 4.6.1 Kernel](https://github.com/NEESCHAL-3/EVONIX-Kernel/) (`HyperOS -- KSU + SUSFS`):**
    * Officially compatible with **HyperOS 4 / Android 17** keeping the Linux `6.6.144` Android GKI base (`adios`, `bbr`, `schedutil`, KernelSU Next `v3.4.2`, and SUSFS `v2.4.0`).
-   * If using the AnyKernel3 `.zip` package, boot into **Fastboot**, flash the **HyperOS 4-specific OrangeFox** to `vendor_boot` *(released by the developer on their Telegram channel; not yet published on GitHub)* via `fastboot flash vendor_boot <ofox_hos4>.img && fastboot reboot recovery`, flash the EVONIX 4.6.1 `.zip` *(no Format Data or wipes)*, and reboot to system.
+   * If using the AnyKernel3 `.zip` package, boot into **Fastboot**, flash the **[HyperOS 4-specific OrangeFox (Telegram)](https://t.me/PocoX7ProNepalChat/93841)** to `vendor_boot` *(released by [NEESCHAL](https://github.com/NEESCHAL-3) on Telegram; not yet published on GitHub)* via `fastboot flash vendor_boot <ofox_hos4>.img && fastboot reboot recovery`, flash the EVONIX 4.6.1 `.zip` *(no Format Data or wipes)*, and reboot to system.
 3. **Install the [KernelSU Next](https://github.com/KernelSU-Next/KernelSU-Next) manager (`v3.4.2`):**
    * Install the APK (`com.rifsxd.ksunext`), open it, and confirm it detects the EVONIX 4.6.1 kernel properly.
 4. **Enable ADB debugging on the phone:**
@@ -474,3 +474,9 @@ Depending on the package type removed, use the matching method *(no ROM reflash 
   ```powershell
   adb shell "su -c 'cmd package compile --reset <package.name>'"
   ```
+
+---
+
+## Credits & Acknowledgements
+
+* Special thanks to **[NEESCHAL](https://github.com/NEESCHAL-3)** for his great work on the **[EVONIX Kernel](https://github.com/NEESCHAL-3/EVONIX-Kernel/)** and the **[OrangeFox recovery for HyperOS 4](https://t.me/PocoX7ProNepalChat/93841)** for the POCO X7 Pro (`rodin`). You can explore all of his projects and releases on GitHub: **[github.com/NEESCHAL-3](https://github.com/NEESCHAL-3)**.
