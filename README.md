@@ -63,6 +63,9 @@ POCO-X7-Pro-HyperOS4-Debloat-Optimize/
     └── 02_revertir_optimizaciones_hos4_eea.ps1           # Revierte los ajustes de sistema y 5G (sección 3) a valores stock
 ```
 
+> [!TIP]
+> **Descarga rápida (solo extraer y usar):** descarga **`POCO-X7-Pro-HyperOS4-Debloat-Optimize-Scripts_v1.0.zip`** desde **[GitHub Releases](https://github.com/como-cuando-que/POCO-X7-Pro-HyperOS4-Debloat-Optimize/releases/latest)**, extráelo en cualquier carpeta y haz doble clic en **`Iniciar_Menu.bat`**.
+
 > [!NOTE]
 > Este repositorio incluye únicamente la guía y los scripts. Los **2 módulos KSU propios** creados para esta guía (`Xiaomi Dialer/InCallUI/Messages` y `HyperOS 4 Flagship Visual Unlock`) están alojados en su repositorio dedicado **[POCO-X7-Pro-HyperOS4-KSU-Modules](https://github.com/como-cuando-que/POCO-X7-Pro-HyperOS4-KSU-Modules)** (archivos sin comprimir + changelogs en el repo y `.zip` listos para flashear en **[Releases](https://github.com/como-cuando-que/POCO-X7-Pro-HyperOS4-KSU-Modules/releases)**), y los binarios de terceros (kernel, gestor root y mods) se descargan desde sus enlaces oficiales indicados en la sección `0` y la sección `2`.
 
